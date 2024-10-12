@@ -9,13 +9,13 @@ function App() {
 
  let clickHandler = function () {
   setIndex((old => {
-    return foodData.length -1 > old ? old + 1 : old;
+    return foodData.length -1 > old ? old + 1 : old - 9;
   }))
  }
 
  let prevsHandler = function () {
   setIndex((old => {
-    return old === 0 ? 0 : --old
+    return old === 0 ? +9 : --old;
   }))
  }
 
